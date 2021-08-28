@@ -118,6 +118,9 @@ button:hover {
   height: 81px;
   margin-bottom: 0px !important;
 }
+.nav-below-container-nav ul #subnav {
+  position: relative;
+}
 .nav-below-container-nav ul li {
   margin-left: 31px;
 }
@@ -139,9 +142,17 @@ button:hover {
 .nav-below-container-login a {
   display: flex;
   align-items: center;
+  color: black;
+}
+.nav-below-container-login a:hover {
+  color: #ba933e;
+  text-decoration: none;
 }
 .nav-below-container-login a i {
   margin-right: 5px;
+}
+.nav-below-container-login a i:hover {
+  color: #ba933e;
 }
 .nav-below-container-login p {
   margin-left: 27px;
@@ -293,6 +304,14 @@ button:hover {
 .background-top-content button:hover {
   background-color: #f5f5f5;
   color: black;
+}
+.background-top .slide {
+  position: absolute;
+  top: 95%;
+  left: 47%;
+}
+.background-top .slide input {
+  background-color: #ba933e;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -524,12 +543,15 @@ button:hover {
   margin-left: 0px;
 }
 .product-clother-card h6 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 16px;
 }
 .product-clother-card p {
   font-size: 16px;
+}
+.product-clother-card a {
+  color: black;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -645,7 +667,7 @@ button:hover {
     position: absolute;
     top: 21%;
     left: 5%;
-    width: 50%;
+    width: 51%;
   }
   .collection-container-left .left-content p {
     margin-bottom: 0px !important;
@@ -668,6 +690,9 @@ button:hover {
     border-radius: 5px;
     background-color: black;
     color: white;
+  }
+  .collection-container-right {
+    margin-left: 1.5%;
   }
   .collection-container-right img {
     width: 100%;
@@ -734,6 +759,11 @@ button:hover {
 .subscribe-box-title .text-3 {
   margin-top: 42px;
 }
+.subscribe-box-title .input-sub {
+  font-size: 13px;
+  padding: 0 10px;
+  border: 2px solid #e1dfdc !important;
+}
 .subscribe-box-title .input-btn {
   margin-top: 38px;
   margin-left: 120px;
@@ -775,12 +805,12 @@ button:hover {
     font-weight: bold;
   }
   .subscribe-box-title .text-2 {
-    margin-top: 2%;
-    font-size: 61%;
+    margin-top: 1%;
+    font-size: 70%;
   }
   .subscribe-box-title .text-3 {
     margin-top: 30px;
-    font-size: 61%;
+    font-size: 70%;
   }
   .subscribe-box-title .input-btn {
     margin-top: 30px;
@@ -1035,6 +1065,9 @@ button:hover {
 .footer-top-container .container-4 .phone {
   display: flex;
 }
+.footer-top-container .container-4 .phone .phone-text {
+  margin-left: 10px;
+}
 .footer-top-container .container-4 a {
   font-size: 14px;
   color: #7f7f7f;
@@ -1045,6 +1078,9 @@ button:hover {
 .footer-top-container .container-4 .map p {
   font-size: 14px;
   color: #7f7f7f;
+}
+.footer-top-container .container-4 .map .map-text {
+  margin-left: 10px;
 }
 .footer-top-container .container-4 .find {
   margin-top: 10%;

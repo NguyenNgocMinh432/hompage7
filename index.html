@@ -87,7 +87,13 @@
                 <div class="nav-below-container-nav">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li id="subnav"><a href="#">Shop</a>
+                                <!-- <ul class="list-item">
+                                    <li><a href="#">Shop Clother</a></li>
+                                    <li><a href="#">Shop Bag</a></li>
+                                    <li><a href="#">Shop Sneaker</a></li>
+                                </ul> -->
+                        </li>
                         <li><a href="#">Pages</a></li>
                         <li><a href="#">Element</a></li>
                         <li><a href="#">Blog</a></li>
@@ -95,7 +101,10 @@
                     </ul>
                 </div>
                 <div class="nav-below-container-login">
-                    <a><i class="far fa-user"></i> Login/Register</a>
+                    <a href="#"><i class="far fa-user" ></i> 
+                    <a href="#">Login/</a>
+                    <a href="#">Register</a>
+                    </a>
                     <p>|</p>
                     <img class="item-1" src="./Images/images/hear.jpg"/>
                     <img class="item-2" src="./Images/images/lock.jpg"/>
@@ -104,11 +113,11 @@
             </div>
            
         </div>
-        <div class="background-top">
-            <div class="background-top-image">
+        <!-- <div class="background-top"> -->
+            <!-- <div class="background-top-image">
                 <img src="./Images/bg.jpg"/>
-            </div>
-            <div class="background-top-content">
+            </div> -->
+            <!-- <div class="background-top-content">
                 <div class="text-1" style="display: flex;">
                     <p style="font-weight: bold;">Quick parcel delivery, </p>
                     <p style="color: #ba933e;font-weight: bold;">from $25</p>
@@ -119,10 +128,74 @@
                 </button>
             </div>
             <div class="slide">
-                <img style="position:absolute;top:92%;left:46%" src="Images/images/slide.jpg"/>
+                <input type="radio" name="bottom" id="check-img"/>
+                <input type="radio" name="bottom" id="check-img"/>
+                <input type="radio" name="bottom" id="check-img"/>
             </div>
+             -->
+            <!-- boostrap -->
 
-        </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./Images/bg.jpg" alt="First slide">
+                    <div class="background-top-content" style="top:32%; left:16.5%">
+                        <div class="text-1" style="display: flex;">
+                            <p style="font-weight: bold;">Quick parcel delivery, </p>
+                            <p style="color: #ba933e;font-weight: bold;">from $25</p>
+                        </div>
+                        <h4 style="margin-bottom:20px;">New Season Women's Fashion Up to 70% off now!</h4> 
+                        <button>Start Shopping    >
+                            
+                        </button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./Images/images/bg2.jpg" alt="Second slide">
+                    <div class="background-top-content" style="top:32%; left:16.5%">
+                        <div class="text-1" style="display: flex;">
+                            <p style="font-weight: bold;">Quick parcel delivery, </p>
+                            <p style="color: #ba933e;font-weight: bold;">from $25</p>
+                        </div>
+                        <h4 style="margin-bottom:20px;">Everyone’s Talking About
+                            Collection AW 2020.</h4> 
+                        <button>Start Shopping    >
+                            
+                        </button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./Images/images/bg3.jpg" alt="Third slide">
+                    <div class="background-top-content" style="top:32%; left:16.5%">
+                        <div class="text-1" style="display: flex;">
+                            <p style="font-weight: bold;">Quick parcel delivery, </p>
+                            <p style="color: #ba933e;font-weight: bold;">from $25</p>
+                        </div>
+                        <h4 style="margin-bottom:20px;">Cover Up! Spring is coming
+                            Extra 40% off now.</h4> 
+                        <button>Start Shopping    >
+                            
+                        </button>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only" style="color:#ba933e" >Next</span>
+                </a>
+              </div>
+
+              <!-- boostrap -->
+        <!-- </div> -->
         <!-- <nav class="navbar navbar-expand-lg navbar-light bg sticky-top">
              <div class="container-fluid">
                  <a class="navbar-brand" href="#">
@@ -149,7 +222,7 @@
         </nav> -->
         <div class="categories-top">
             <p>Shop by Categories</p>
-            <p>Top categories in the week</p> 
+            <p style="color:#444444">Top categories in the week</p> 
         </div>
        
         <div class="categories-below">
@@ -176,7 +249,7 @@
         <div class="product">
             <div class="product-title">
                     <h4>Trending Products</h4>
-                    <p>Top view in this week</p>
+                    <p style="color:#444444">Top view in this week</p>
             </div>
             <div class="product-clother">
                 <div class="product-clother-card">
@@ -184,15 +257,15 @@
                         <img src="./Images/product1.jpg"/>
                     </div>
                  
-                    <h6>Sweeper and Funnel</h6>
-                    <p>$49.00</p>
+                      <a href=""><h6>Sweeper and Funnel</h6></a>
+                    <p style="color:#989898">$49.00</p>
                 </div>
                 <div class="product-clother-card">
                     <div class="card-scale">
                         <img src="./Images/jogger.jpg"/>
                     </div>
                  
-                    <h6>Hanging egg chair</h6>
+                      <a href=""><h6>Hanging egg chair</h6></a>
                     <div class="text" style="display: flex;">
                         <p style="  text-decoration: line-through;">  $57.00  </p>
                         <p style="margin-left: 5px; color:#bf9c52">$39.00</p> 
@@ -204,48 +277,48 @@
                         <img src="./Images/bag.jpg"/>
                     </div>
                
-                    <h6>Iconic Rocking Horse</h6>
-                    <p>$49.00</p>
+                     <a href=""><h6>Iconic Rocking Horse</h6></a>
+                    <p style="color:#989898">$49.00</p>
                 </div>
                 <div class="product-clother-card" >
                     <div class="card-scale">
                         <img src="./Images/boy.jpg"/>
                     </div>
                  
-                    <h6>Laundry Baskets</h6>
-                    <p>$49.00</p>
+                     <a href=""><h6>Laundry Baskets</h6></a>
+                    <p style="color:#989898">$49.00</p>
                 </div>
                 <div class="product-clother-card" style="margin-left: 0px;">
                     <div class="card-scale">
                         <img src="./Images/phong.jpg"/>
                     </div>
                  
-                    <h6>Pia Chair</h6>
-                    <p>$21.00 - $28.00</p>
+                     <a href=""><h6>Pia Chair</h6></a>
+                    <p style="color:#989898">$21.00 - $28.00</p>
                 </div>
                 <div class="product-clother-card">
                     <div class="card-scale">
                         <img src="./Images/boy2.jpg"/>
                     </div>
                    
-                    <h6>Turning Table</h6>
-                    <p>$25900</p>
+                     <a href=""><h6>Turning Table</h6></a>
+                    <p style="color:#989898">$25900</p>
                 </div>
                 <div class="product-clother-card">
                     <div class="card-scale">
                         <img src="./Images/bbb.jpg"/>
                     </div>
                    
-                    <h6>Side Table</h6>
-                    <p>$39.00</p>
+                      <a href=""><h6>Side Table</h6>  </a>
+                    <p style="color:#989898">$39.00</p>
                 </div>
                 <div class="product-clother-card">
                     <div class="card-scale">
                         <img src="./Images/boy3.jpg"/>
                     </div>
                     
-                    <h6>Arctander Chair</h6>
-                    <p>$79.00</p>
+                  <a href="">  <h6>Arctander Chair</h6> </a>
+                    <p style="color:#989898">$79.00</p>
                 </div>
             </div>
         </div>
@@ -285,38 +358,38 @@
         <div class="product">
             <div class="product-title">
                     <h4>Best Seller Products</h4>
-                    <p>Top sale in this week</p>
+                    <p style="color:#444444">Top sale in this week</p>
             </div>
             <div class="product-clother">
                 <div class="product-clother-card">
                     <div class="card-scale">
                         <img src="./Images/cap.jpg"/>
                     </div>
-                    <h6>ubert pendant lamp</h6>
-                    <p>$79.00</p>
+                     <a href=""><h6>ubert pendant lamp</h6></a>
+                    <p style="color:#989898">$79.00</p>
                 </div>
                 <div class="product-clother-card">
                     <div class="card-scale">
                         <img src="./Images/cap2.jpg"/>
                     </div>
                  
-                    <h6>Langue Stack Chair</h6>
-                    <p>$29.00</p>
+                      <a href=""> <h6>Langue Stack Chair</h6> </a>
+                    <p style="color:#989898">$29.00</p>
                 </div>
                 <div class="product-clother-card">
                     <div class="card-scale">
                         <img src="./Images/boy4.jpg"/>
                     </div>
                     
-                    <h6>Storm Small Jug</h6>
-                    <p>$49.00</p>
+                     <a href=""><h6>Storm Small Jug</h6></a>
+                    <p style="color:#989898">$49.00</p>
                 </div>
                 <div class="product-clother-card" >
                     <div class="card-scale">
                         <img src="./Images/ao1.jpg"/>
                     </div>
                     
-                    <h6>Beoplay A1</h6>
+                     <a href=""><h6>Beoplay A1</h6></a>
                     <div class="text" style="display: flex;">
                         <p style="  text-decoration: line-through;">  $57.00  </p>
                         <p style="margin-left: 5px; color:#bf9c52">$39.00</p> 
@@ -327,32 +400,32 @@
                         <img src="./Images/girl.jpg"/>
                     </div>
                    
-                    <h6>Mogens koch Bookcase</h6>
-                    <p>$21.00 - $28.00</p>
+                     <a href=""><h6>Mogens koch Bookcase</h6></a>
+                    <p style="color:#989898">$21.00 - $28.00</p>
                 </div>
                 <div class="product-clother-card">
                     <div class="card-scale">
                         <img src="./Images/quan2.jpg"/>
                     </div>
                    
-                    <h6>Victo pedant lamp</h6>
-                    <p>$39.00</p>
+                   <a href=""> <h6>Victo pedant lamp</h6> </a>
+                    <p style="color:#989898">$39.00</p>
                 </div>
                 <div class="product-clother-card">
                     <div class="card-scale">
                         <img src="./Images/boycap.jpg"/>
                     </div>
                     
-                    <h6>Outdoor Dining Table</h6>
-                    <p>$259.00</p>
+                    <a href="">   <h6>Outdoor Dining Table</h6></a>          
+                    <p style="color:#989898">$259.00</p>
                 </div>
                 <div class="product-clother-card">
                     <div class="card-scale">
                         <img src="./Images/sneaker.jpg"/>
                     </div>
                     
-                    <h6>Stainless steel teapotl</h6>
-                    <p>$79.00</p>
+                     <a href="#"><h6>Stainless steel teapotl</h6></a>
+                    <p style="color:#989898">$79.00</p>
                 </div>
             </div>
         </div>
@@ -363,12 +436,12 @@
             <div class="subscribe-box">
                 <div class="subscribe-box-title">
                     <p class="text-1">Subcribe To Our Newsletter</p>
-                    <p class="text-2">Sign up for the weekly newsletter and build better ecommerce stores.</p>
+                    <p class="text-2" style="color:#444444;">Sign up for the weekly newsletter and build better ecommerce stores.</p>
                     <div class="input-btn">
                         <input type="text" class="input-sub" placeholder="Enter your email address"/>
                         <button>Subcribe</button>
                     </div>
-                    <p class="text-3">We respect your privacy, so we never share your info.</p>
+                    <p class="text-3" style="color:#444444;">We respect your privacy, so we never share your info.</p>
 
                 </div>
             </div>
@@ -378,19 +451,19 @@
                 <div class="icond-container-left">
                     <img src="./Images/images/plant1.jpg" style="margin-bottom: 10px;"/>
                     <h5>Free Worldwide Shipping</h5>
-                    <p>On all orders over $75.00</p>
+                    <p style="color:#444444;">On all orders over $75.00</p>
                     <a href="#">Learn more > </a> 
                 </div>
                 <div class="icond-container-left">
                     <img src="./Images/images/box2.jpg" style="margin-bottom:16px; margin-top: 10px;" />
                     <h5>100% Payment Secure</h5>
-                    <p>We ensure secure payment with PEV</p>
+                    <p style="color:#444444;">We ensure secure payment with PEV</p>
                     <a href="#">Learn more > </a> 
                 </div>
                 <div class="icond-container-left">
                     <img src="./Images/images/send2_06.jpg" style="margin-bottom: 10px;" />
                     <h5>30 Days Return</h5>
-                    <p>Return it within 20 day for an exchange</p>
+                    <p style="color:#444444;">Return it within 20 day for an exchange</p>
                     <a href="#">Learn more > </a> 
                 </div>
             </div>
@@ -399,7 +472,7 @@
        <div class="blogg"> 
              <div class="blogg-top">
                 <h4>Latest From Blog</h4>
-                <p>Class aptent taciti sociosqu ad litora torquent per</p>
+                <p style="color:#444444;">Class aptent taciti sociosqu ad litora torquent per</p>
             </div>
             <div class="blogg-below">
                 <div class="blogg-below-container" >
@@ -407,9 +480,13 @@
                         <img src="./Images/blog1.jpg"/>
 
                         <button class="lifestyle" >LIFESTYLE</button>
-                        <p>Chris Johson .October 16,2020</p>
+                        <div class="text" style="display: flex;">
+                            <p style="font-weight: bold;">Chris Johson .</p>
+                            <p style="color:#444444;">October 16, 2020</p>
+                        </div>
+                        
                         <h4>Facebook AR/VR</h4>
-                        <p class="content">Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                        <p style="color:#444444;" class="content">Class aptent taciti sociosqu ad litora torquent per conubia nostra,
                              per inceptos himenaeos.
                              Sed luctus, dui eu sagittis sodales, nulla nibh sagittis augue...</p>
                         <a><button class="read">
@@ -420,9 +497,12 @@
                         <img src="./Images/blog2.jpg"/>
 
                         <button class="lifestyle" >LIFESTYLE</button>
-                        <p>Chris Johson .October 16,2020</p>
+                        <div class="text" style="display: flex;">
+                            <p style="font-weight: bold;">Chris Johson .</p>
+                            <p style="color:#444444;">October 16, 2020</p>
+                        </div>
                         <h4>Can Robots find a home?</h4>
-                        <p class="content">Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                        <p style="color:#444444;" class="content">Class aptent taciti sociosqu ad litora torquent per conubia nostra,
                              per inceptos himenaeos.
                              Sed luctus, dui eu sagittis sodales, nulla nibh sagittis augue...</p>
                         <a><button class="read">
@@ -433,9 +513,12 @@
                         <img src="./Images/blog3.jpg"/>
 
                         <button class="lifestyle" >LIFESTYLE</button>
-                        <p>Chris Johson .October 16,2020</p>
+                        <div class="text" style="display: flex;">
+                            <p style="font-weight: bold;">Chris Johson .</p>
+                            <p style="color:#444444;">October 16, 2020</p>
+                        </div>
                         <h4>Can Robots find a home?</h4>
-                        <p class="content">Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                        <p style="color:#444444;" class="content">Class aptent taciti sociosqu ad litora torquent per conubia nostra,
                              per inceptos himenaeos.
                              Sed luctus, dui eu sagittis sodales, nulla nibh sagittis augue...</p>
                         <a><button class="read">
@@ -448,7 +531,7 @@
         <div class="instagram">
             <div class="instagram-title">
                 <p>Follow us on Instagram</p>
-                <p>@ Rubix Instagram</p>
+                <p style="color:#444444;">@ Rubix Instagram</p>
             </div>
             
         </div>
@@ -520,6 +603,7 @@
                 </div>
             </div>
         </div>
+        <hr style="background-color: #444444;margin-top:0px;margin-bottom:0px;"/>
         <div class="footer-below">
             <div class="footer-below-container">
                 <div class="footer-below-container-left">
